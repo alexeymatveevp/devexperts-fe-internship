@@ -1,11 +1,6 @@
 ---
 ---
 
-# ![Devexperts](https://devexperts.com/app/themes/devexperts/dist/images/devexperts-logo-orange.17fa0fc7.svg)
-This course is for Devexperts internship program for frontend development
-
-We'll try to understand what is frontend development and how we cook it at Devepxerts ![(heart)](https://confluence.in.devexperts.com/s/c9rl1q/8703/51k4y0/_/images/icons/emoticons/heart.svg) ^c1aace
-
 # What is the scope of Frontend Development (FE)
 Modern term "Frontend Development" is mostly about ^5c6fbb
 -   HTML / CSS / JS
