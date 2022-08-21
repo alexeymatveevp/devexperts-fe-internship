@@ -20,9 +20,10 @@ Each company has their own principles and values. Here at Devexperts we believe 
 2. [[Basics]]
 3. [[Frontend Technologies]]
 
+# Articles
+1. [[Event Loop]]
+2. [[Source Maps]]
+3. 
+
 # Learning Resources
 1. [[Frontend Learning Resources]]
-
-### 📖 Continue reading
-
-**Next**: [[Intro]]

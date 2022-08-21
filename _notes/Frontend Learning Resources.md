@@ -14,3 +14,7 @@ This page contains links to resources where you can learn frontend development.
 
 [[Git]]:
 * [git book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) - very good, translated to multiple languages ⭐
+
+
+ears ago FE was not very complex as it's counterpart Backend Development - but now, it's the same level and sometimes even more complex
+-   **Fast developer experience** - FE applications are us

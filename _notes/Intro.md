@@ -2,7 +2,7 @@
 ---
 
 # What is the scope of Frontend Development (FE)
-Modern term "Frontend Development" is mostly about ^5c6fbb
+Modern term "Frontend Development" is about
 -   HTML / CSS / JS
 -   JS frameworks like React, Angular, VueJS
 -   Browsers API - Chrome, Firefox, Safari
@@ -30,10 +30,22 @@ People you will communicate with:
 -   **Business Analyst** - answers business questions, important to understand why we need this app at all?
 -   **Project Manager** - coordinates everybody's work and put milestones
 -   **Product Manager** - makes sure your app has features that could be solved to the clients
+- **[[Team Lead]]** - person responsible for you and your tasks
 
 # Common tasks of FE developer
+You will join existing project and start learning it. Projects may be very different in terms of technologies, processes and team composition.
+
+Your first tasks would be like:
+* [[Bugfixing]] - fix something that worked before but now it's broken 🐛
+* build new UI - build something new: popup with news, notification alert, sidebar or share button (usually on top of already existing components)
+* create new components - build new atomic components like input, button group, selectbox, lazy loading table
+* apply styling - make designer dreams come true 🌈
 
 # Complex and unusual tasks that FE developers solve
+When you're already familiar with the technological basics and understand subject area better - your [[Team Lead|team lead]] may challenge you with more complex tasks
+* new features - usually has some new [[Business Logic|business logic]] or changes in existing BL (so-called [[Change Request]])
+* 
+
 
 # Career and future in Frontend Development (Senior/Lead Developer, Team Lead, Solution Architect, Product Manager, UX Designer)
 

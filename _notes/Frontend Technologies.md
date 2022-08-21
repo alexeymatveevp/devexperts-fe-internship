@@ -24,15 +24,19 @@ Tools which are not the actual code executed in browser, but are used to make it
 * [[CI CD|CI/CD]] platform 
 * Issue tracker
 * Knowledge base
-* 
-# Dev Software
-Software we use to communicate and write programs:
-* IDE
-* Collaboration tools
-* Mail
+
+# Collaboration Tools
+No project can be successful with transparent and easy communication and collaboration between team members 🤝
+
+Here are the tools that help with this:
+* [Slack](https://slack.com/) - our main messanger at Devex ⭐
+* Zoom - we use zoom for internal calls ⭐
+* Email - though being old, email is still the TOP-1 when talking with clients, for slow-discussions and it's calendar-apps integration
 
 ---
 ### 📖 Continue reading
 
-**Previous**: [[Basics]]
+**Previous**: [[Basics]]  
 **Next**: 
+
+manually

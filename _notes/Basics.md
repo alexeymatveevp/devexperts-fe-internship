@@ -30,5 +30,5 @@ One big topic - DevTools, a Chromium project masterpiece, the tool which allows 
 ---
 ### 📖 Continue reading
 
-**Previous**: [[Intro]]
+**Previous**: [[Intro]]  
 **Next**: [[Frontend Technologies]]
