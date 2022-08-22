@@ -1,5 +1,5 @@
 ---
-aliases: readable, readability
+aliases: readable, readability, read
 ---
 Code readability - is a property of source code which makes it easier to read for most of readers
 

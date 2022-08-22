@@ -8,6 +8,9 @@ This page contains links to resources where you can learn frontend development.
 * [MDN resources](https://developer.mozilla.org/en-US/) - very good to go step by step, also to use a a wiki to understand basics and API
 * [learn.javascript.ru](https://learn.javascript.ru/) - Russian resource, wery well done as well
 
+[[TypeScript|TS]]:
+- [Official Website](https://www.typescriptlang.org/) - very good docs ⭐
+
 [[RxJS|RxJS]]:
 * [rxmarbles](https://rxmarbles.com/) - learn RxJS the visual way, very good ⭐
 * [learnrxjs](https://www.learnrxjs.io/learn-rxjs/concepts/rxjs-primer)
