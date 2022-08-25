@@ -57,6 +57,13 @@ class BidirectionalLinksGenerator < Jekyll::Generator
           /\[\[(#{note_title_regexp_pattern})\]\]/i,
           anchor_tag
         )
+
+        # Images
+        # ![[images/blabla.png]]
+        current_note.content.gsub!(
+          /\!\[\[(.*)\]\]/i,
+          "<img src='#{site.baseurl}/images/\\1'>"
+        )
       end
 
       # At this point, all remaining double-bracket-wrapped words are

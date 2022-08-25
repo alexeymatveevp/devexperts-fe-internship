@@ -1,3 +1,0 @@
----
-aliases: bundlers, module bundler
----

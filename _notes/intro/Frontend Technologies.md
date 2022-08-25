@@ -1,19 +1,19 @@
 ---
 ---
 
-# JS Frameworks
-Today's applications are usually build not using pure JS (vanilla JS), but on top on some framework
+# JS Libraries
+Today's applications are usually build not using pure JS (vanilla JS), but on top on some library / framework
 
-The most popular frameworks are:
+The most popular libraries are:
 * [[React|React]] - the one we use at Devexperts ⭐
 * Angular
 * VueJS
 
 Here at Devexperts we use React, your can read about it [on the official website](https://reactjs.org/tutorial/tutorial.html)
-# CSS Frameworks
+# CSS Tools
 JS is used to write [[Business Logic|business logic]] , but FE developer is also programming the design of application. You can definitely do it with pure CSS and many projects do it. But there are helpful tools, frameworks and techniques to make styling easier in big projects
 
-The major CSS techniques are:
+The main CSS tools are:
 * [[CSS Preprocessors|CSS Preprocessors]] (like SCSS, LESS and SASS)
 * CSS in JS - we use [[Styled Components|styled-components]] ⭐
 * Component libraries (Bootstrap, Foundation, Semantic UI)
