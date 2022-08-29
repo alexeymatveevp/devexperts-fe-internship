@@ -1,5 +1,5 @@
 ---
-aliases: bundlers, module bundler
+aliases: bundlers, module bundler, Bundling
 ---
 Bulder is a software that assembles the source code consisting of many files (say **200 files**) like `css`, `ts` and `png`, ... into a thing called **bundle** which can consiste of
 - `bundle.js` - JS code of your app

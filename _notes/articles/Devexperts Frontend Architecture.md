@@ -3,7 +3,7 @@
 Here at Devexperts we're writing FE apps using *our own specific approach*  
 This includes:
 - reactive state management
-- type-safe [[dependency injection]]
+- type-safe [[dependency injection]] 
 - dump components development
 
 Common architecture at Devex FE has the following terms:
