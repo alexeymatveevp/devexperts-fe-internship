@@ -32,6 +32,8 @@ Please read all these articles:
 17. [[Unit testing and Autotests]]
 18. [[Swagger codegen]]
 19. [[Accessability]]
+20. [[GWT-React mediator]]
+21. [[Styling Techniques]]
 
 # 🔗 Learning Resources
 1. [[Frontend Learning Resources]]
