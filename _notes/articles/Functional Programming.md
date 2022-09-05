@@ -1,6 +1,8 @@
 ---
 ---
 
+> TODO copy from here https://stash.in.devexperts.com/projects/IO/repos/devexperts-frontend-stack-guide/browse
+
 # Functional thinking
 short tutorial to what FP is, cons and pros
 
