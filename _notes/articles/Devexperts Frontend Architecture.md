@@ -24,3 +24,6 @@ We want to [[Coupling|de-couple]] components from business-logic and develop the
 
 Ready components can then be connected to your application via [[React]] props
 
+
+links:
+https://confluence.in.devexperts.com/pages/viewpage.action?pageId=198388509

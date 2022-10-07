@@ -14,14 +14,14 @@ Here at Devexperts we use React, your can read about it [on the official website
 JS is used to write [[Business Logic|business logic]] , but FE developer is also programming the design of application. You can definitely do it with pure CSS and many projects do it. But there are helpful tools, frameworks and techniques to make styling easier in big projects
 
 The main CSS tools are:
-* [[CSS Preprocessors|CSS Preprocessors]] (like SCSS, LESS and SASS)
+* [[CSS Preprocessors|CSS Preprocessors]] (like SCSS, LESS and SASS) ⭐
 * CSS in JS - we use [[Styled Components|styled-components]] ⭐
-* Component libraries (Bootstrap, Foundation, Semantic UI)
+* Component libraries (Bootstrap, Ant Design, Foundation, Semantic UI)
 
 # More frontend technologies
 - [[TypeScript]] - we write all our code on TS ⭐
-- HTML Canvas - a way to do graphics in browser (for example we do it for our [DXChart software](https://webdev.prosp.devexperts.com:9081/))
-- 
+- HTML Canvas - a way to do graphics in browser (for example we do it for our [DXChart software](https://webdev.prosp.devexperts.com:9081/)) ⭐
+- [[RxJS]] - reactive programming for JS, makes it easier to deal with callbacks and async code ⭐
 
 # Dev Software
 Tools which are not the actual code executed in browser, but are used to make it happen
