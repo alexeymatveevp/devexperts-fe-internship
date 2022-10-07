@@ -20,6 +20,7 @@ That's all - just start writing 📝
 
 ## Configure obsidian
 Right-click on `images` folder and set it as attachments folder
+
 ![images/Pasted image 20221007114809.png](images/Pasted%20image%2020221007114809.png)
 
 Now you can just `Ctrl+V` images and they will be inserted in images folder (just like the one above)
@@ -43,10 +44,13 @@ Go to *Settings => Community plugins => Browse* and install some plugins
 Emojis are really helpful when writing articles to emphasise the idea
 - Emoji shortcodes
 - Emoji toolbar
+
 ![images/Pasted image 20221007114422.png](images/Pasted%20image%2020221007114422.png)
 
 With emoji shortcodes you can start typing `:anything` and it will give you an emoji helper
+
 ![images/Pasted image 20221007115017.png](images/Pasted%20image%2020221007115017.png)
 
 With emoji toolbar you can press `Ctrl + J` (assign hotkey to "Open Emoji Picker") and see a nice toolbar with emojis
+
 ![images/Pasted image 20221007115755.png](images/Pasted%20image%2020221007115755.png)
