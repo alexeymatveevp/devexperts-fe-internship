@@ -13,8 +13,8 @@ Wellcome to Devexperts Frontend Intership space!
 # 📙 Articles
 This is the **main** educational section 👇  
 Please read all these articles:
-1. [Development Process](Development%20Process.md)
-2. [Devexperts Frontend Architecture](Devexperts%20Frontend%20Architecture.md)
+1. [[Development Process]]
+2. [[Devexperts Frontend Architecture]]
 3. [[Context Framework]]
 4. [[Fontend Application Bundling]]
 5. [[TypeScript Basics]]
