@@ -17,7 +17,8 @@ TypeScript comes with an optional static typing and type inference system throug
 TypeScript supports type definitions for existing JavaScript libraries. TypeScript Definition file (with .d.ts extension) provides definition for external JavaScript libraries. Hence, TypeScript code can contain these libraries.
 
 TypeScript supports Object Oriented Programming concepts like classes, interfaces, inheritance, etc.
-&nbsp;
+<br />
+<br />
 
 # Do browsers understand Typescript?
 Browsers don’t understand TypeScript, the code should be _compiled_ to JavaScript. The TypeScript _npm_ package adds TypeScript support, when it is installed into the project, the corresponding version of the TypeScript language service gets loaded in the editor. It is also possible to run the methods of the package from _CLI_.
@@ -38,7 +39,8 @@ Object is a value in memory which is referenced by an identifier and would be de
   * **Arrays**; are regular objects for which there is a particular relationship between integer-keyed properties and the length property,
   * **Map - WeakMap**; are collections of key-value pairs,
   * **Set - WeakSet**, are collections of values,
-  &nbsp;
+&NewLine;
+&NewLine;
 
 # Types Introduced by TypeScript;
 **Unknown**: We may need to describe the type of variables that we do not know when we are writing an application. These values may come from dynamic content – e.g. from the user – or we may want to intentionally accept all values in our API. In these cases, we want to provide a type that tells the compiler and future readers that this variable could be anything, so we give it the unknown type.
@@ -69,8 +71,8 @@ We can use such a function to ensure exhaustive matching within switch and if-el
 	    }
 	}
 ```
-&nbsp;
-
+` `  
+` `
 # Type Annotations;
 In TypeScript when you declare a variable using const, var, or let, you can optionally add a type annotation to explicitly specify the type of the variable (type annotations will always go after the thing being typed);
 ```typescript
@@ -152,7 +154,8 @@ For this definition Java developers might say “That’s not a Person. That’s
 Some developers may have heard this referred to as “duck typing” — if it walks like a duck and it quacks like a duck, then it’s a duck. Structural typing and duck typing are very similar — “structural typing” is often used to refer to such checks run at compile time, while “duck typing” refers to the same checks run at runtime.
 
 There is another type system called nominal typing. A nominal type system uses the name of the type to check for equivalence (as known from Java).   
-&nbsp;
+` `  
+` `
 
 # Much More:
 With types, TypeScript offers a lot more capabilities. Checkout official documantation page: https://www.typescriptlang.org/docs/handbook/intro.html   
