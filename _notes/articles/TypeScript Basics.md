@@ -75,7 +75,6 @@ We can use such a function to ensure exhaustive matching within switch and if-el
 ```
 <br />
 <br />
-
 # Type Annotations;
 In TypeScript when you declare a variable using const, var, or let, you can optionally add a type annotation to explicitly specify the type of the variable (type annotations will always go after the thing being typed);
 ```typescript
@@ -119,7 +118,6 @@ To define an object type, we simply list its properties and their types;
 ```
 <br />
 <br />
-
 # Defining a Type:
 
 In JavaScript, the fundamental way that we group and pass around data is through objects. In TypeScript, we represent those through _object types_. One of the ways to define a type is interface;
@@ -160,7 +158,6 @@ Some developers may have heard this referred to as “duck typing” — if it w
 There is another type system called nominal typing. A nominal type system uses the name of the type to check for equivalence (as known from Java).   
 <br />
 <br />
-
 # Much More:
 With types, TypeScript offers a lot more capabilities. Checkout official documantation page: https://www.typescriptlang.org/docs/handbook/intro.html<br />
 For tips, tricks and advanced features, checkout this page: https://basarat.gitbook.io/typescript/<br />
