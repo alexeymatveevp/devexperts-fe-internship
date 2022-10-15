@@ -31,7 +31,7 @@ The set of types in the JavaScript language consists of primitive values and obj
   * **Boolean**; represents a logical entity and can have two values: true and false,
   * **Null**; has exactly one value: null,
   * **Undefined**; is the value of variable which has not been assigned a value,
-  * **Number**; is a [double-precision 64-bit binary format IEEE 754 value](https://en.wikipedia.org/wiki/Double_precision_floating-point_format).  It can safely store integers in the range (253 - 1) to -(253 - 1),
+  * **Number**; is a [double-precision 64-bit binary format IEEE 754 value](https://en.wikipedia.org/wiki/Double_precision_floating-point_format).  It can safely store integers in the range (2<sup>53</sup> - 1) to -(2<sup>53</sup> - 1),
   * **BigInt**; is a numeric primitive that can represent integers with arbitrary precision. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for Numbers.
   * **String**; is used to represent textual data.
   * **Symbol**; is a unique value and are often used to add unique property keys to an object that won't collide with keys any other code might add to the object.
