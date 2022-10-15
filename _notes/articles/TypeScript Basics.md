@@ -37,7 +37,6 @@ The set of types in the JavaScript language consists of primitive values and obj
   * **Symbol**; is a unique value and are often used to add unique property keys to an object that won't collide with keys any other code might add to the object.
 
 Object is a value in memory which is referenced by an identifier and would be defined as a collection of properties. There are sub-types of objects;
-  * **String**; is used to represent textual data.
   * **Functions**; are regular objects with the additional capability of being callable,
   * **Arrays**; are regular objects for which there is a particular relationship between integer-keyed properties and the length property,
   * **Map - WeakMap**; are collections of key-value pairs,
