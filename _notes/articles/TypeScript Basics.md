@@ -161,7 +161,7 @@ There is another type system called nominal typing. A nominal type system uses t
 <br />
 <br />
 
-# Much More:
+# There is much more:
 With types, TypeScript offers a lot more capabilities. Checkout official documantation page: https://www.typescriptlang.org/docs/handbook/intro.html<br />
 For tips, tricks and advanced features, checkout this page: https://basarat.gitbook.io/typescript/<br />
 Do you need somebody to explain? Check this out: https://www.udemy.com/course/understanding-typescript/<br />
