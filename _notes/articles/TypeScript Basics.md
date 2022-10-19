@@ -56,22 +56,22 @@ Object is a value in memory which is referenced by an identifier and would be de
 We can use such a function to ensure exhaustive matching within switch and if-else statement: by using it as the default case, we ensure that all cases are covered, since what remains must be of type `never`. If we accidentally leave out a possible match, we get a type error. For example:
 
 ```typescript
-	function unknownColor(x: never): never {
-	    throw new Error("unknown color");
-	}
-		
-	type Color = 'red' | 'green' | 'blue'
-	
-	function getColorName(c: Color): string {
-	    switch(c) {
-	        case 'red':
-	            return 'is red';
-	        case 'green':
-	            return 'is green';
-	        default:
-	            return unknownColor(c); // Argument of type 'string' is not assignable to parameter of type 'never'
-	    }
-	}
+function unknownColor(x: never): never {
+    throw new Error("unknown color");
+}
+
+type Color = 'red' | 'green' | 'blue'
+
+function getColorName(c: Color): string {
+    switch(c) {
+        case 'red':
+            return 'is red';
+        case 'green':
+            return 'is green';
+        default:
+            return unknownColor(c); // Argument of type 'string' is not assignable to parameter of type 'never'
+    }
+}
 ```
 <br />
 <br />
@@ -79,43 +79,43 @@ We can use such a function to ensure exhaustive matching within switch and if-el
 # Type Annotations;
 In TypeScript when you declare a variable using const, var, or let, you can optionally add a type annotation to explicitly specify the type of the variable (type annotations will always go after the thing being typed);
 ```typescript
-	let myName: string = "Alice";
+let myName: string = "Alice";
 ```
 In most cases, though, this isn’t needed. Wherever possible, TypeScript tries to automatically infer the types in your code. For example, the type of a variable is inferred based on the type of its initializer:
 ```typescript
-	// No type annotation needed -- 'myName' inferred as type 'string'
-	let myName = "Alice";
+// No type annotation needed -- 'myName' inferred as type 'string'
+let myName = "Alice";
 ```
 Functions are the primary means of passing data around in JavaScript. TypeScript allows you to specify the types of both the input and output values of functions.
 ```typescript
-	// Parameter type annotation
-	function greet(name: string) {
-	  console.log("Hello, " + name.toUpperCase() + "!!");
-	}
+// Parameter type annotation
+function greet(name: string) {
+  console.log("Hello, " + name.toUpperCase() + "!!");
+}
 ```
 When a parameter has a type annotation, arguments to that function will be checked:
 ```typescript
-	// Would be a runtime error if executed!
-	greet(42);
+// Would be a runtime error if executed!
+greet(42);
 ```
 Argument of type 'number' is not assignable to parameter of type 'string'.
 
 You can also add return type annotations. Return type annotations appear after the parameter list:
 ```typescript
-	function getFavoriteNumber(): number {
-	  return 26;
-	}
+function getFavoriteNumber(): number {
+  return 26;
+}
 ```
 Much like variable type annotations, you usually don’t need a return type annotation because TypeScript will infer the function’s return type based on its return statements. The type annotation in the above example doesn’t change anything. It would be a good exercise to explicitly specify a return type for documentation purposes, or to prevent accidental changes.
 
 To define an object type, we simply list its properties and their types;
 ```typescript
-	// The parameter's type annotation is an object type
-	function printCoord(pt: { x: number; y: number }) {
-	  console.log("The coordinate's x value is " + pt.x);
-	  console.log("The coordinate's y value is " + pt.y);
-	}
-	printCoord({ x: 3, y: 7 });
+// The parameter's type annotation is an object type
+function printCoord(pt: { x: number; y: number }) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+printCoord({ x: 3, y: 7 });
 ```
 <br />
 <br />
@@ -125,33 +125,33 @@ To define an object type, we simply list its properties and their types;
 In JavaScript, the fundamental way that we group and pass around data is through objects. In TypeScript, we represent those through _object types_. One of the ways to define a type is interface;
 
 ```typescript
-	interface Person {
-		name: string;
-		age: number;
-	}
-	
-	function greet(person: Person) {
-		return "Hello " + person.name;
-	}
+interface Person {
+    name: string;
+    age: number;
+}
+
+function greet(person: Person) {
+    return "Hello " + person.name;
+}
 ```
 
 or they can be named by using either a type alias;
 ```typescript
-	type Person = {
-		name: string;
-		age: number;
-	};
-	
-	function greet(person: Person) {
-		return "Hello " + person.name;
-	}
+type Person = {
+    name: string;
+    age: number;
+};
+
+function greet(person: Person) {
+    return "Hello " + person.name;
+}
 ```
 
 or anonymous;
 ```typescript
-	function greet(person: { name: string; age: number }) {
-		return "Hello " + person.name;
-	}
+function greet(person: { name: string; age: number }) {
+    return "Hello " + person.name;
+}
 ```
 For this definition Java developers might say “That’s not a Person. That’s an Object that just happens to have the same properties as Person". This is called structural typing, which cares only about the **structure** of the value. In a structural type system, an object meets the requirements of a type if it has the same properties and methods with the same types as the requested type.
 
