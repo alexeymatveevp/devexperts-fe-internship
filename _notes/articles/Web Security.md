@@ -72,7 +72,7 @@ But the user can try to enter something malicious, like this snippet:
 ```html
 <img src="x" onerror=alert("HACKED!")>
 ```
-If you use `innerHTML`, you’ll create the `<img>` element and run the `onerror` handler. This is where XSS begins. Using `textContent` instead, as it can only output text and doesn’t generate any HTML. 
+If you use `innerHTML`, you’ll create the `<img>` element and run the `onerror` handler. This is where XSS begins. Using `textContent` instead, as it can only output text and doesn’t generate any HTML.   
 If you don’t generate HTML, there’s no way to insert JavaScript. You’ll see `<img src="x" onerror=alert("HACKED!")>` in the DOM, but the JavaScript won’t run.
 <br />
 <br />
