@@ -160,7 +160,7 @@ In the backend, monolithic applications are often split up into smaller componen
 <br />
 
 ### For Further Reading:
-https://medium.com/@tattwei46/what-is-sql-injection-and-xss-2a3f2e7ea0d
+https://medium.com/@tattwei46/what-is-sql-injection-and-xss-2a3f2e7ea0d   
 https://owasp.org/www-community/attacks/xss/
 
 ### Video lesson all covered:
