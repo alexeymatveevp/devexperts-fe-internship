@@ -1,21 +1,21 @@
 # Web Security
 
 ## Web Applications Defined
-From a technical viewpoint, the web is a highly programmable environment that allows mass customization through the immediate deployment of a large and diverse range of applications to millions of global users. Web applications are, therefore, computer programs allowing website visitors to submit and retrieve data to/from a database over the Internet using their preferred web browser.   
+From a technical viewpoint, the web is a highly programmable environment that allows mass customization through the immediate deployment of a large and diverse range of applications to millions of global users. Web applications are, therefore, computer programs allowing website visitors to submit and retrieve data to/from a database over the Internet using their preferred web browser.
 <br />
 <br />
 ## Web Application Attack
 Despite their advantages, web applications do raise a number of security concerns stemming from improper coding. Serious weaknesses or vulnerabilities allow criminals to gain direct and public access to databases in order to churn sensitive data – this is known as a web application attack.
 
-If web applications are not secure, i.e. vulnerable to at least one of the various forms of hacking techniques, then your entire database of sensitive information is at serious risk of a web application attack. [SQL Injection](https://www.acunetix.com/websitesecurity/sql-injection/) attack types, which target the databases directly, are still the most common and the most dangerous type of vulnerability. Other attackers may inject malicious code using the user input of vulnerable web applications to trick users and redirect them towards phishing sites. This type of attack is called [Cross-Site Scripting](https://www.acunetix.com/websitesecurity/cross-site-scripting/) (XSS attacks) and may be used even though the web servers and database engine contain no vulnerability themselves.   
+If web applications are not secure, i.e. vulnerable to at least one of the various forms of hacking techniques, then your entire database of sensitive information is at serious risk of a web application attack. [SQL Injection](https://www.acunetix.com/websitesecurity/sql-injection/) attack types, which target the databases directly, are still the most common and the most dangerous type of vulnerability. Other attackers may inject malicious code using the user input of vulnerable web applications to trick users and redirect them towards phishing sites. This type of attack is called [Cross-Site Scripting](https://www.acunetix.com/websitesecurity/cross-site-scripting/) (XSS attacks) and may be used even though the web servers and database engine contain no vulnerability themselves.
 <br />
 <br />
 ## What is SQL injection (SQLi)?
-SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. This might include data belonging to other users, or any other data that the application itself is able to access. In many cases, an attacker can modify or delete this data, causing persistent changes to the application's content or behavior.   
+SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve. This might include data belonging to other users, or any other data that the application itself is able to access. In many cases, an attacker can modify or delete this data, causing persistent changes to the application's content or behavior.
 <br />
 <br />
 ### SQL injection examples
-Most common SQL injection example is hacking the application database via login form. You can inject a SQL query to the name or password input and submit to check if there is any vulnarability. Check the [cheat sheet](https://sechow.com/bricks/docs/login-1.html) for sql string alternatives.  
+Most common SQL injection example is hacking the application database via login form. You can inject a SQL query to the name or password input and submit to check if there is any vulnarability. Check the [cheat sheet](https://sechow.com/bricks/docs/login-1.html) for sql string alternatives.
 
 There are a wide variety of SQL injection vulnerabilities, attacks, and techniques, which arise in different situations. Some common SQL injection examples include:
 -   [Retrieving hidden data](https://portswigger.net/web-security/sql-injection#retrieving-hidden-data), where you can modify an SQL query to return additional results.
