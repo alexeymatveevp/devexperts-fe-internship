@@ -23,6 +23,7 @@ There are a wide variety of SQL injection vulnerabilities, attacks, and techniqu
 -   [UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks), where you can retrieve data from different database tables.
 -   [Examining the database](https://portswigger.net/web-security/sql-injection/examining-the-database), where you can extract information about the version and structure of the database.
 -   [Blind SQL injection](https://portswigger.net/web-security/sql-injection/blind), where the results of a query you control are not returned in the application's responses.
+<br />
 
 ## What is cross-site scripting (XSS)?
 Cross-site scripting (XSS) is a type of injection attack in which a threat actor inserts data, such as a malicious [script](https://www.techtarget.com/whatis/definition/script), into content from trusted websites. The malicious code is then included with dynamic content delivered to a victim's browser. XSS enables an attacker to execute malicious scripts in another user's browser. However, instead of attacking the victim directly, the attacker exploits a vulnerability in a website the victim visits and gets the website to deliver the malicious script.
@@ -51,7 +52,6 @@ There are many html attribute that can be used for exploitation. Check the [XSS 
 - **Encode data on output-** When user-controllable data is provided in HTTP responses, encode the output to prevent it from being executed by HTML parser. Depending on the output context, this might require applying combinations of HTML, URL, JavaScript, and CSS encoding.
 - **Use appropriate response headers-** To prevent XSS in HTTP responses that aren’t intended to contain any HTML or JavaScript, we can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend. Eg. A JSON data should never be encoded as text/html, to prevent it from accidental execution.
 <br />
-<br />
 
 ### Strict User Input (the First Point of Attack)
 User input should always be strict in nature, to avoid vulnerabilities like SQL injection, clickjacking, etc. So it’s important to validate or sanitize user input before sending it to the back end. Sanitizing data can be done by removing or replacing contextually-dangerous characters, such as by using a whitelist and escaping the input data. However, sanitizing and encoding is not an easy task for all existing possibilities, there are some open-source libraries comes to the rescue:
@@ -72,7 +72,8 @@ But the user can try to enter something malicious, like this snippet:
 ```html
 <img src="x" onerror=alert("HACKED!")>
 ```
-If you use `innerHTML`, you’ll create the `<img>` element and run the `onerror` handler. This is where XSS begins. Using `textContent` instead, as it can only output text and doesn’t generate any HTML. If you don’t generate HTML, there’s no way to insert JavaScript. You’ll see `<img src="x" onerror=alert("HACKED!")>` in the DOM, but the JavaScript won’t run.
+If you use `innerHTML`, you’ll create the `<img>` element and run the `onerror` handler. This is where XSS begins. Using `textContent` instead, as it can only output text and doesn’t generate any HTML. 
+If you don’t generate HTML, there’s no way to insert JavaScript. You’ll see `<img src="x" onerror=alert("HACKED!")>` in the DOM, but the JavaScript won’t run.
 <br />
 <br />
 
@@ -102,6 +103,8 @@ Also, be sure to include `integrity` attribute when possible when adding a scr
 ```html
 <script src= "https://example.com/example-framework.js" integrity= "sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/ux..." crossorigin= "anonymous" ></script>
 ```
+<br />
+<br />
 
 ### Enable XSS Protection Mode
 If somehow an attacker injects malicious code from the user input, we can instruct the browser to block the response by supplying the `"X-XSS-Protection": "1; mode=block"` header.
@@ -146,8 +149,8 @@ Run `npm audit` regularly to get a list of vulnerable packages and upgrade the
 
 ### Keep Errors Generic
 An error like “Your password is incorrect,” may be helpful to the user but also to the attackers. They may figure out information from these errors that helps them to plan their next action. When dealing with accounts, emails, and PII, we should try to use ambiguous errors like “Incorrect login information.”
-<br \>
-<br \>
+<br />
+<br />
 
 ### Compartmentalize your application 
 Web applications are often built as single applications, deployed in a single origin within the browser. For example, an app running in [https://app.example.com](https://app.example.com/) offers public parts, authenticated parts, and even administrator features. However a successful attack against the public part of the application automatically affects the other parts as well, potentially causing significant damage.
