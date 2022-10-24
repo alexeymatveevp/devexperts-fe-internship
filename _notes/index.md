@@ -23,7 +23,7 @@ Please read all these articles:
 8. [[Team City CI]]
 9. [[Release Process]]
 10. [[Docker for frontend]]
-11. [[Pixel Perfect Designs]]
+11. [[Flexible Pixel Perfect]]
 12. [[Styling Techniques]]
 13. [[Chameleon]]
 14. [[MIRO Boarding]]
