@@ -40,5 +40,8 @@ Please read all these articles:
 25. [[Web Applications Performance]]
 26. [[Web Security]]
 
+# More articles proposal
+- Too much HTTP requests problem , JS bundle chunking, optimal way to create chunks
+
 # 🔗 Learning Resources
 1. [[Frontend Learning Resources]]

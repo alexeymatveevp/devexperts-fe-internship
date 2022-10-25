@@ -1,11 +1,79 @@
 ---
 ---
 
+# Overview
 [[Bundler|Bundling]] is the process of transforming source code + all required assest into a **web bundle**, which can be opened in a browser (with no additional modifications)
+
+There are different bundlers out there
+- webpack
+- rollup
+- esbuild
+- vitejs
+- parcel
+
+## Why we need to create a bundle?
+Back in the days a web application looked like this
+
+```
+// index.html
+<html lang="en">  
+<head>  
+    <title>My webpage</title>  
+    <script src="script.js"></script>
+</head>  
+<body>  
+    <div id="root">  
+        <button>My Button</button>  
+    </div>  
+</body>  
+</html>
+
+// script.js
+var button = document.querySelector('#root > button');  
+button.addEventListener('click', () => console.log('You clicked me!'));  
+```
+
+And there were no problems with this... until you have too much code
+
+```
+// index.html
+<html lang="en">
+<head>  
+    <title>My webpage</title>  
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+    <script src="script5.js"></script>
+    ...
+</head>
+...
+```
+
+It's not very easy to maintain - in order to organize your code you need to manually create these scripts, somehow share information between them (hoisting of `var`s). Imagine moving code from one script to another when performing refactoring. Also you need to manually include these scripts in correct order to HTML file.
+
+### Too many HTTP requests problem
+Another problem - each `scriptX.js` in HTML file is a new HTTP request. This is bad because each HTTP request creates a new connection with the server which takes some time.
+
+> In other words it's faster to download *1 file of size 1Mb* than *100 files of size 10Kb*
+
+The above is not always true, you need to consider many things like: browser caching, number of pages in your app, how frequently these pages (and scripts in them) update
+
+This whole topic is pretty deep and requires a separate article. Google for "js chunking" to understand more about it
+
+### SPA vs MPA
+https://kodytechnolab.com/single-page-apps-vs-multi-page-apps
+
+Complex web apps today are mostly [SPA](https://en.wikipedia.org/wiki/Single-page_application)'s
+
+And in order to create an SPA we use different technologies like:
+- modular structure of files - `import`s and  `export`s
+- TypeScript
+- Scss or styled-components
 
 Usually we use [webpack](https://webpack.js.org/), so we'll talk about it in this tutorial
 
-## Webpack concepts
+# Webpack
 Read about [concepts](https://webpack.js.org/concepts/) on webpacks web site - it's pretty well done 👍
 
 Two main concepts to read and understand:
