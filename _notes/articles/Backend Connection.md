@@ -14,6 +14,8 @@ Explain how we connect GWT to React components, some screenshots and code exampl
 # Websockets
 Atmosphere, how to make a connection, how to consume data
 
+[https://www.youtube.com/watch?v=1BfCnjr_Vjg&ab_channel=Fireship](https://www.youtube.com/watch?v=1BfCnjr_Vjg&ab_channel=Fireship)
+
 # Runtime validations
 explain why we need it (because no TS in runtime)
 

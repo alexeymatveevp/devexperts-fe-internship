@@ -59,6 +59,8 @@ Another problem - each `scriptX.js` in HTML file is a new HTTP request. This is 
 
 The above is not always true, you need to consider many things like: browser caching, number of pages in your app, how frequently these pages (and scripts in them) update
 
+> 🔍 google for "js chunking"
+
 This whole topic is pretty deep and requires a separate article. Google for "js chunking" to understand more about it
 
 ### SPA vs MPA
@@ -122,8 +124,24 @@ Read about tree shaking [here](https://webpack.js.org/guides/tree-shaking/#root)
 
 In short - it's a process of **dead-code elimination** from resulting bundle.
 
+### Mode
+Other important thing is `mode` is webpack, it can be either
+- `development`
+- `production`
+The `developent` mode will allow you to support [[Source Maps|source maps]] which is a way to debug your code in DevTools in Chrome
+
+### Hash content / caching
+When developing bundle it is cached 
+
+# Babel
+Babel is a JS => JS compiler, or transpiler
+
+@babel/template is a way to configure babel AST generator internally - so it's like an example of DI or I in SOLID, or middleware
+
 
 
 links:
 https://www.udemy.com/course/webpack-from-beginner-to-advanced/
 https://www.freecodecamp.org/news/get-started-with-vite/
+
+[Webpack features youtube](https://www.youtube.com/watch?v=IZGNcSuwBZs)
